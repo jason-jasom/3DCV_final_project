@@ -1,3 +1,15 @@
+# Luminance GS improved
+
+3D Gaussian Splatting (3DGS) enables real-time novel view synthesis with high visual quality but remains sensitive to complex lighting variations. Luminance-GS improves robustness by jointly optimizing Gaussian parameters and pseudo ground truth images while preserving rendering efficiency. In this work, we revisit Luminance-GS and identify limitations in its per-view color matrix mapping, which can lead to color inconsistencies. We propose an HSV-based luminance formulation that operates solely on the value channel and introduce a saturation compensation strategy to correct the resulting color distortions. We further analyze the use of Vision Transformers in the view-adaptive curve module. Additionally, our method allows user-controlled adjustment of luminance and color temperature, enhancing flexibility under diverse lighting conditions. The proposed improvements improve color fidelity and practical usability while maintaining the efficiency of the original 3DGS framework.
+
+![alt text](assets/image-3.png)
+
+![alt text](assets/image-2.png)
+
+![alt text](assets/image-1.png)
+
+![alt text](assets/image.png)
+
 # Installation
 
 Clone our project and install ***Python(>=3.9.0)*** and then install ***Pytorch*** (we use 1.13.1) first and then (we use gsplat 1.0):
